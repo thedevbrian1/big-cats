@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "tiger": {
+            "biteForce": 1050,
+            "mass": 300,
+            "agility": 8,
+            "length": 3.5
+        }
+    },
+    {
+        "id": 2,
+        "lion": {
+            "biteForce": 650,
+            "mass": 190,
+            "agility": 7,
+            "length": 2.1
+        }
+    },
+    {
+        "id": 3,
+        "jaguar": {
+            "biteForce": 1110,
+            "mass": 100,
+            "agility": 7,
+            "length": 1.7
+        }
+    },
+    {
+        "id": 4,
+        "leopard": {
+            "biteForce": 300,
+            "mass": 150,
+            "agility": 8,
+            "length": 1.5
+        }
+    },
+    {
+        "id": 5,
+        "snowLeopard": {
+            "biteForce": 387,
+            "mass": 32,
+            "agility": 7,
+            "length": 1.1
+        }
+    },
+    {
+        "id": 6,
+        "cheetah": {
+            "biteForce": 472,
+            "mass": 70,
+            "agility": 9,
+            "length": 1.3
+        }
+    }
+]
