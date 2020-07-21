@@ -5,7 +5,8 @@ const router = express.Router();
 
 router.get('/cats', async (req, res) => {
     const data = fs.readFileSync(path.join(__dirname, '../stats.json'));
-    res.send(data);
+    const statsData = JSON.parse(data)
+    res.send(statsData);
 })
 
 router.get('/cats/:id', async (req, res) => {
