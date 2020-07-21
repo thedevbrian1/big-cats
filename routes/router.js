@@ -3,7 +3,12 @@ const fs = require('fs');
 const path = require('path');
 const router = express.Router();
 
-const getCatStats = async (req, res) => {
+router.get('/cats', async (req, res) => {
+    const data = fs.readFileSync(path.join(__dirname, '../stats.json'));
+    res.send(data);
+})
+
+router.get('/cats/:id', async (req, res) => {
     try {
         const data = fs.readFileSync(path.join(__dirname, '../stats.json'));
         const statsData = JSON.parse(data);
@@ -18,10 +23,8 @@ const getCatStats = async (req, res) => {
         next(e);
     }
 
-}
+});
 
-router
-    .route('/cats/:id')
-    .get(getCatStats);
+
 
 module.exports = router;
